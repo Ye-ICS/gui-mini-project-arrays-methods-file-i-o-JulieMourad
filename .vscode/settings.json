@@ -1,13 +1,25 @@
 {
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "c:\\Users\\jm8im09\\OneDrive - Limestone DSB\\Computer Science 11\\Lib\\javafx-sdk-21.0.9\\lib\\javafx.base.jar",
-        "c:\\Users\\jm8im09\\OneDrive - Limestone DSB\\Computer Science 11\\Lib\\javafx-sdk-21.0.9\\lib\\javafx.controls.jar",
-        "c:\\Users\\jm8im09\\OneDrive - Limestone DSB\\Computer Science 11\\Lib\\javafx-sdk-21.0.9\\lib\\javafx.fxml.jar",
-        "c:\\Users\\jm8im09\\OneDrive - Limestone DSB\\Computer Science 11\\Lib\\javafx-sdk-21.0.9\\lib\\javafx.graphics.jar",
-        "c:\\Users\\jm8im09\\OneDrive - Limestone DSB\\Computer Science 11\\Lib\\javafx-sdk-21.0.9\\lib\\javafx.media.jar",
-        "c:\\Users\\jm8im09\\OneDrive - Limestone DSB\\Computer Science 11\\Lib\\javafx-sdk-21.0.9\\lib\\javafx.swing.jar",
-        "c:\\Users\\jm8im09\\OneDrive - Limestone DSB\\Computer Science 11\\Lib\\javafx-sdk-21.0.9\\lib\\javafx.web.jar",
-        "c:\\Users\\jm8im09\\OneDrive - Limestone DSB\\Computer Science 11\\Lib\\javafx-sdk-21.0.9\\lib\\javafx-swt.jar"
-    ]
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/stdlib.jar",
+            "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/lib/javafx.base.jar",
+            "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/lib/javafx.controls.jar",
+            "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/lib/javafx.fxml.jar",
+            "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/lib/javafx.graphics.jar",
+            "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/lib/javafx.media.jar",
+            "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/lib/javafx.swing.jar",
+            "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/lib/javafx.web.jar",
+            "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/lib/javafx-swt.jar"
+        ],
+        "sources": {
+            "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/lib/javafx.base.jar": "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/src/javafx.base",
+            "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/lib/javafx.controls.jar": "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/src/javafx.controls",
+            "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/lib/javafx.fxml.jar": "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/src/javafx.fxml",
+            "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/lib/javafx.graphics.jar": "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/src/javafx.graphics",
+            "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/lib/javafx.media.jar": "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/src/javafx.media",
+            "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/lib/javafx.swing.jar": "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/src/javafx.swing",
+            "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/lib/javafx.web.jar": "c:/Users/jm8im09/OneDrive - Limestone DSB/Computer Science 11/Lib/javafx-sdk-21.0.9/src/javafx.web",
+        }
+    }
 }
