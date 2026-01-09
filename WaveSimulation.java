@@ -1,19 +1,13 @@
-import java.io.File;
 import java.io.IOException;
-import java.util.Scanner;
 import java.io.PrintWriter;
 
 public class WaveSimulation {
-    static final int SIZE = 30;   // How many bars in the wave, fewer bars → shorter line
+    static final int SIZE = 30;   //How many bars in the wave, fewer bars → shorter line
+    static double[] height = new double[SIZE]; // The heights of each bar
+    static double TRANSFER_FRACTION = 0.6; //How much of a bar's height it gives to neighbours each step
 
-    // The heights of each bar
-    static double[] height = new double[SIZE];
 
-    //How much of a bar's height it gives to neighbours each step
-    //Bigger number means faster spreading and flattening
-    static double TRANSFER_FRACTION = 0.6;
-
-    //This makes all the bars flat (height = 0)
+    // This makes all the bars flat (height = 0)
     static void resetWave() {
         for (int i = 0; i < SIZE; i++) {
             height[i] = 0.0;
@@ -23,9 +17,8 @@ public class WaveSimulation {
     static void saveToFile(String filename){
      try {
         PrintWriter out = new PrintWriter(filename); //open a text file with the given name, willc reate the file if it doesnt exist
-
         for(int i = 0; i < SIZE; i++){
-            out.print(height[i] + ", ");
+            out.println(height[i]);
         }
 
         out.close(); //saves everything
@@ -37,12 +30,13 @@ public class WaveSimulation {
         //now this will create a file that contains all the current bar heights
     }
 
+    
     static void loadFromFile(String filename) {
         try {
-        java.util.Scanner in = new java.util.Scanner(new java.io.File(filename)); //opens file for reading
+            java.util.Scanner in = new java.util.Scanner(new java.io.File(filename)); //opens file for reading
 
         for(int i = 0; i < SIZE; i++){
-            if(in.hasNextDouble()){ //loop reading doubles, keeps the numbers and fills the hight[]
+            if (in.hasNextDouble()){ //loop reading doubles, keeps the numbers and fills the hight[]
                 height[i] = in.nextDouble();
             } else {
                 height[i] = 0.0;
@@ -62,9 +56,11 @@ public class WaveSimulation {
         if (index < 0 || index >= SIZE) {
             return;
         }
+
         if (value < 0) {
             value = 0;  //makes it so it does not go below baseline
         }
+
         height[index] = value;
     }
 
@@ -92,14 +88,9 @@ public class WaveSimulation {
                 newHeight[i + 1] += share;
             }
         }
-
-        // Copy the new values back into the main array
-        for (int i = 0; i < SIZE; i++) {
-            height[i] = newHeight[i];
-        }
     }
 
-    // Read one bar's height
+    //get the height of a bar
     static double getHeight(int index) {
         if (index < 0 || index >= SIZE) {
             return 0.0;
@@ -107,8 +98,4 @@ public class WaveSimulation {
         return height[index];
     }
 
-    static void simulateNextStep() {
-        //TODO
-    }
 }
-
