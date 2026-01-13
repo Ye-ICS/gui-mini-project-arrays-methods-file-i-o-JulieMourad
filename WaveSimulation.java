@@ -51,6 +51,8 @@ public class WaveSimulation {
         }
     }
 
+
+
     //This directly sets the height of one bar (used when you drag)
     static void setHeight(int index, double value) {
         if (index < 0 || index >= SIZE) {
@@ -64,6 +66,7 @@ public class WaveSimulation {
         height[index] = value;
     }
 
+ 
     // One "step" of the wave: each bar shares some height with neighbours
     static void stepWave() {
         double[] newHeight = new double[SIZE];
@@ -87,6 +90,10 @@ public class WaveSimulation {
             if (i < SIZE - 1) {
                 newHeight[i + 1] += share;
             }
+        }
+
+        for (int i = 0; i < SIZE; i++) {
+            height[i] = newHeight[i];
         }
     }
 
